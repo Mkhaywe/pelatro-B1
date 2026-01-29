@@ -1,0 +1,58 @@
+# ============================================================================
+# CORE DEPENDENCIES (Required)
+# ============================================================================
+
+# Django Core
+Django>=4.2.0
+djangorestframework>=3.14.0
+django-cors-headers>=4.3.0
+requests>=2.31.0
+
+# PostgreSQL Database
+psycopg2-binary>=2.9.0
+
+# ============================================================================
+# ML DEPENDENCIES (Required for ML predictions)
+# Python 3.10+ recommended for TensorFlow 2.15+
+# ============================================================================
+
+numpy>=1.24.0
+tensorflow>=2.15.0
+# Alternative: tensorflow-cpu>=2.15.0 (smaller, CPU-only)
+# onnxruntime>=1.16.0  # Optional: Alternative to TensorFlow
+
+# ============================================================================
+# PERFORMANCE (Recommended)
+# ============================================================================
+
+# Redis for caching (recommended for performance)
+redis>=5.0.0
+
+# ============================================================================
+# ENTERPRISE SERVICES (Required for execution engines)
+# ============================================================================
+
+# Schedule trigger evaluation
+croniter>=1.3.0
+
+# ============================================================================
+# EVENT-DRIVEN (Optional - if you need Kafka)
+# ============================================================================
+
+# Kafka integration (optional - for event-driven features)
+# confluent-kafka>=2.3.0
+
+# ============================================================================
+# DWH INTEGRATION (Optional - configure when ready)
+# ============================================================================
+
+# For PostgreSQL DWH
+# sqlalchemy>=2.0.0
+
+# For Oracle DWH
+# cx_Oracle>=8.3.0
+# pyodbc>=5.0.0  # Windows alternative
+
+# For Snowflake DWH
+# snowflake-connector-python>=3.0.0
+

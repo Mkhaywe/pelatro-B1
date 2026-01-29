@@ -1,0 +1,59 @@
+# Delete old documentation files (keep only COMPREHENSIVE_DOCUMENTATION.md and README.md)
+
+$filesToDelete = @(
+    'ARCHITECTURE_CLARIFICATION.md',
+    'ARCHITECTURE_DWH_INTEGRATION.md',
+    'COMPLETE_IMPLEMENTATION_SUMMARY.md',
+    'ENTERPRISE_BACKEND_COMPLETE.md',
+    'USER_MANUAL_COMPLETE.md',
+    'ML_SEGMENTATION_GUIDE.md',
+    'ML_TRAINING_GUIDE.md',
+    'ML_RECOMMENDATIONS.md',
+    'CONFIGURATION_GUIDE.md',
+    'SEGMENTATION_EXAMPLES.md',
+    'FIXES_SUMMARY.md',
+    'CUSTOMIZATION_FIXES.md',
+    'LOGIN_CREDENTIALS.md',
+    'IMPLEMENTATION_SUMMARY.md',
+    'IMPLEMENTATION_STATUS_COMPLETE.md',
+    'IMPLEMENTATION_ROADMAP.md',
+    'FRONTEND_COMPLETE.md',
+    'PROJECT_COMPLETE_SUMMARY.md',
+    'CAMPAIGN_BUILDER_ENHANCED.md',
+    'PROGRAM_BUILDER_ENHANCED.md',
+    'FRONTEND_ML_VISUALIZATIONS.md',
+    'FRONTEND_PROGRESS.md',
+    'BACKEND_FRONTEND_STATUS.md',
+    'FRONTEND_DEVELOPMENT_PLAN.md',
+    'PELATRO_FEATURES_AUDIT.md',
+    'BACKEND_ENTERPRISE_PLAN.md',
+    'FEATURE_COMPARISON.md',
+    'BUILDING_ADVANCED_FEATURES.md',
+    'REAL_REQUIREMENTS.md',
+    'TEST_ML_WITH_DUMMY_DATA.md',
+    'ML_MODULE_COMPLETE_GUIDE.md',
+    'ML_QUICK_START.md',
+    'IMPLEMENT_ML_NOW.md',
+    'SYSTEM_STATUS.md',
+    'RESTART_BACKEND.md',
+    'QUICK_FIX_CONNECTION.md',
+    'TEST_SERVERS.md',
+    'CLEANUP_SUMMARY.md',
+    'START_SERVER_FINAL.md',
+    'TEST_AND_RUN.md',
+    'TEST_SYSTEM.md',
+    'FINAL_STATUS.md'
+)
+
+foreach ($file in $filesToDelete) {
+    if (Test-Path $file) {
+        Remove-Item $file -Force
+        Write-Host "Deleted: $file"
+    }
+}
+
+Write-Host "`nCleanup complete! Only COMPREHENSIVE_DOCUMENTATION.md and README.md remain."
+
+
+
+

@@ -1,0 +1,12 @@
+"""
+WSGI config for loyalty microservice project.
+"""
+
+import os
+
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'loyalty_project.settings')
+
+application = get_wsgi_application()
+
